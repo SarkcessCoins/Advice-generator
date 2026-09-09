@@ -18,7 +18,6 @@ img {
   --btn-shadow: hsl(150, 83%, 76%);
 
   /* ### Neutral */
-
   --Blue600: hsl(217, 19%, 38%);
   --Blue900: hsl(217, 19%, 24%);
   --Bg-color: hsl(218, 23%, 16%);
@@ -31,7 +30,6 @@ img {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
 body {
   display: flex;
   flex-direction: column;
@@ -45,7 +43,7 @@ main {
   text-align: center;
   padding: 2em;
   border-radius: 1rem;
-  width: 80%;
+  width: min(80%, 25em);
   position: relative;
 }
 .advice-title {
@@ -57,7 +55,9 @@ main {
 .advice-text {
   padding-block: 2em;
   color: var(--Blue);
-  font-size: clamp(0.75rem, 5vw, 3rem);
+  font-size: clamp(0.75rem, 4vw, 2rem);
+  line-height: 1.5;
+  overflow-wrap: break-word;
 }
 .generate-button {
   border: none;
@@ -74,5 +74,5 @@ main {
   cursor: pointer;
 }
 footer {
-  margin-top: 10em;
+  margin-top: 5em;
 }

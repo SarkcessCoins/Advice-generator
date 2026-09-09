@@ -16,12 +16,13 @@
       <h1 class="advice-title">Advice # <span id="adive-id"></span></h1>
       <div class="advice-card">
         <p class="advice-text" id="advice-text">" Advice text goes here"</p>
-        <source media="(min-width: 40em)" srcset="images/pattern-divider-desktop.svg" />
-        <img
-          src="images/pattern-divider-mobile.svg"
-          alt="Decorative divider with symmetrical lines and dots creating a centered pattern, providing visual separation in the advice card layout"
-        />
-      </source>
+        <picture>
+          <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 40em)" />
+          <img
+            src="images/pattern-divider-mobile.svg"
+            alt="Decorative divider with symmetrical lines and dots creating a centered pattern, providing visual separation in the advice card layout"
+          />
+        </picture>
       </div>
       <button class="generate-button"><img src="images/icon-dice.svg" /></button>
     </main>
