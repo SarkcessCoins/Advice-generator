@@ -51,12 +51,20 @@ main {
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
 }
+.advice-text::before {
+  content: open-quote;
+}
+.advice-text::after {
+  content: close-quote;
+}
+
 .advice-text {
   padding-block: 2em;
   color: var(--Blue);
   font-size: clamp(0.75rem, 4vw, 2rem);
   line-height: 1.2;
   overflow-wrap: break-word;
+  text-shadow: 0.5px 1px var(--Blue600);
 }
 .generate-button {
   border: none;
@@ -68,7 +76,8 @@ main {
   left: 50%;
   transform: translate(-50%, 50%);
 }
-.generate-button:hover {
+.generate-button:hover,
+:focus {
   box-shadow: 0 0 1em var(--btn-shadow);
   cursor: pointer;
 }
