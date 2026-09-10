@@ -50,13 +50,12 @@ main {
   color: var(--Green);
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
-  text-align: center;
 }
 .advice-text {
   padding-block: 2em;
   color: var(--Blue);
   font-size: clamp(0.75rem, 4vw, 2rem);
-  line-height: 1.5;
+  line-height: 1.2;
   overflow-wrap: break-word;
 }
 .generate-button {
