@@ -8,7 +8,7 @@ const handleAdvice = () => {
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4 && xhr.status === 200) {
       const data = JSON.parse(xhr.responseText);
-      adviceText.textContent = `" ${data.slip.advice} "`;
+      adviceText.textContent = `${data.slip.advice}`;
       adviceId.textContent = `${data.slip.id}`;
     }
   };
