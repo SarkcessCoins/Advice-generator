@@ -7,15 +7,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Frontend Mentor | Advice generator app</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="container">
-      <h1 class="advice-title">Advice # <span id="adive-id"></span></h1>
+      <h1 class="advice-title">Advice #<span id="advice-id"></span></h1>
       <div class="advice-card">
-        <p class="advice-text" id="advice-text">" Advice text goes here"</p>
+        <p class="advice-text" id="advice-text">click dice for new advice</p>
         <picture>
           <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 40em)" />
           <img
@@ -24,12 +22,14 @@
           />
         </picture>
       </div>
-      <button class="generate-button"><img src="images/icon-dice.svg" /></button>
+      <button class="generate-button" id="advice-btn"><img src="images/icon-dice.svg" alt="generate advice" /></button>
     </main>
 
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
-      <a href="#">Success</a>.
+      <a href="https://x.com/codewithsuccess?s=21">Success</a>.
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>
