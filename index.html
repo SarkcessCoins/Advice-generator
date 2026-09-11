@@ -13,8 +13,8 @@
     <main class="container">
       <h1 class="advice-title">Advice #<span id="advice-id"></span></h1>
       <div class="advice-card">
-        <p class="advice-text" id="advice-text"><q> click dice for new advice </q></p>
-        <p id="indicator"></p>
+        <p class="advice-text" id="advice-text" aria-live="polite"><q> click dice for new advice </q></p>
+        <p id="indicator" aria-live="polite"></p>
         <picture>
           <source srcset="images/pattern-divider-desktop.svg" media="(min-width: 40em)" />
           <img
@@ -23,7 +23,9 @@
           />
         </picture>
       </div>
-      <button class="generate-button" id="advice-btn"><img src="images/icon-dice.svg" alt="generate advice" /></button>
+      <button class="generate-button" id="advice-btn" type="button" aria-disabled="false">
+        <img src="images/icon-dice.svg" alt="generate advice" />
+      </button>
     </main>
 
     <footer class="attribution">
