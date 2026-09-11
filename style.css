@@ -63,8 +63,10 @@ main {
 
 .advice-text {
   padding-block: 2em;
+  font-weight: 800;
+  font-family: "Manrope", sans-serif;
   color: var(--Blue);
-  font-size: clamp(0.75rem, 4vw, 2rem);
+  font-size: clamp(0.9rem, 4vw, 2rem);
   line-height: 1.2;
   overflow-wrap: break-word;
 }
