@@ -51,11 +51,11 @@ main {
   font-size: 0.75rem;
   letter-spacing: 0.25rem;
 }
-.advice-text::before {
-  content: open-quote;
-}
-.advice-text::after {
-  content: close-quote;
+
+.indicator-error {
+  font-size: clamp(0.75rem, 4vw, 1.5rem);
+  padding-block: 1em;
+  color: red;
 }
 
 .advice-text {
